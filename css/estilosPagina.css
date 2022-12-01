@@ -7,7 +7,12 @@ h2{
    font: 12px sans-serif;
 }
 
-header,section,footer,aside,nav,article{
+header,
+section,
+footer,
+aside,
+nav,
+article {
     display: block;
 }
 
@@ -16,12 +21,66 @@ body{
     background-color: gray;
 }
 
+img{
+    width: 60px;
+    display: block;
+    margin: 20px auto;
+}
+
 .cabecera{
     background: white;
-    border: 2px solid darkslategray ;
+    border: 1px solid darkslategray ;
     padding: 20px;
 }
 
 .cabecera h1{
     text-align: left;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 7px;
+    margin: 5px;
+}
+
+.menu{
+    background: burlywood;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.formulario{
+    width: 900px;
+    border: double black;
+    margin: 15px auto
+}
+
+.seccion{
+    margin: 20px;
+    width: 500px;
+    float: left;
+}
+
+.referencias{
+    border: 1px solid black ;
+    width: 300px;
+    margin: 20px;
+    float: left;
+}
+
+article{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: darkseagreen;
+}
+
+article footer{
+    text-align: right;
+}
+
+.pie{
+    clear: both;
 }
