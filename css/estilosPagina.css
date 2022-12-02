@@ -64,10 +64,11 @@ img{
 }
 
 .referencias{
-    border: 1px solid black ;
-    width: 300px;
-    margin: 20px;
+    /*border: 1px solid black ;*/
+    width: 250px;
+    margin: 25px 35px;
     float: left;
+    margin-top: 200px;
 }
 
 article{
@@ -83,4 +84,11 @@ article footer{
 
 .pie{
     clear: both;
+}
+
+blockquote{
+    border: 1px solid black;
+    width: 200px;
+    margin: 10px auto 40px auto;
+    
 }
