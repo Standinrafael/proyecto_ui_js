@@ -7,14 +7,7 @@ h2{
    font: 12px sans-serif;
 }
 
-header,
-section,
-footer,
-aside,
-nav,
-article {
-    display: block;
-}
+
 
 body{
     text-align: center;
