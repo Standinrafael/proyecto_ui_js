@@ -1,20 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+
+        function cambiarColor() {
+            document.getElementById('ele1').style.backgroundColor = 'blue'
+        }
+        function cambiarColor2(color) {
+            document.getElementById('ele1').style.backgroundColor = color
+        }
+        function sumar(num1, num2) {
+            return num1 + num2
+        }
+
+        function restar(num1, num2) {
+            return num1 - num2
+        }
+    </script>
+    <script src="/js/funciones.js"></script>
 </head>
-<body>
+
+<body >
     <header></header>
     <nav></nav>
     <section>
         <label id="ele1" for="">Texto 1</label>
         <label id="ele2" for="">Texto 2</label>
+        <img id="img1" src="../images/indice1.jpg" alt="No existe img">
         <button onclick="document.getElementById('ele1').innerHTML='Modificaste el texto'">Cambiar texto</button>
+        <button onclick="cambiarColor()">Cambiar Color 2</button>
+        <button onclick="cambiarColor2('yellow')">Cambiar Color 3</button>
         <button onclick="document.getElementById('ele1').style.backgroundColor='blue'">Cambiar color</button>
+        <button onclick="document.getElementById('img1').src='../images/indice.jpg'">Cambiar img</button>
+        <input id="password1" type="password">
+        <button onclick="alert(document.getElementById('password1').value)">Mostrar contrasenia</button>
+        <button onclick="alert(sumar(3,5))">Sumar</button>
+
+
+        <input id="num1" type="text">
+        <input id="num2" type="text">
+
+        <button
+            onclick="alert(restar(document.getElementById('num1').value,document.getElementById('num2').value))">Restar
+        </button>
+
+        <button onclick="document.getElementById('resu').innerHTML=dividir(10,2)">Dividir2</button>
+        <label id="resu" for="">Resultado:</label>
+
+        <div style="display: block ;">
+            <h1> Calculadora</h1>
+            <label for="">Numero1:</label>
+            <input id="num3" type="number">
+            <label for="">Numero2:</label>
+            <input id="num4" type="number">
+
+            <button
+                onclick="document.getElementById('resuSuma').innerHTML=sumar1(parseInt(document.getElementById('num3').value),parseInt(document.getElementById('num4').value))">Sumar</button>
+            <label id="resuSuma" for="">Resultado Suma:</label>
+
+            <button
+                onclick="document.getElementById('resuResta').innerHTML=restar(document.getElementById('num3').value,document.getElementById('num4').value)">Restar</button>
+            <label id="resuResta" for="">Resultado Resta:</label>
+
+            <button
+                onclick="document.getElementById('resuMulti').innerHTML=multiplicar(document.getElementById('num3').value,document.getElementById('num4').value)">Multiplicar</button>
+            <label id="resuMulti" for="">Resultado Multiplicacion:</label>
+
+            <button
+                onclick="document.getElementById('resuDivi').innerHTML=dividir(document.getElementById('num3').value,document.getElementById('num4').value)">Dividir</button>
+            <label id="resuDivi" for="">Resultado Division:</label>
+        </div>
+
+
+
+
     </section>
     <footer></footer>
 </body>
+
 </html>
